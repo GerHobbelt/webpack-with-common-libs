@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "grunt"
+    "start": "grunt",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "grunt": "~0.4.2",
@@ -22,6 +24,8 @@
     "style-loader": "~0.6.0",
     "grunt-contrib-watch": "~0.5.3",
     "react": "^0.10.0",
-    "jsx-loader": "^0.10.2"
-  }
+    "jsx-loader": "^0.10.2",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
